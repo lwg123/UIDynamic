@@ -46,6 +46,7 @@
     
     [self.animator removeAllBehaviors];
     [self.animator addBehavior:snap];
+    NSLog(@"哈哈，终于好了");
     
 }
 
