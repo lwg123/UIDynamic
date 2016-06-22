@@ -48,6 +48,7 @@
     [self.animator addBehavior:snap];
     NSLog(@"哈哈，终于好了");
     NSLog(@"再试一次");
+    NSLog(@"hah");
     
 }
 
