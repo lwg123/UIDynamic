@@ -29,26 +29,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     //[self testGravity];
     //[self testCollision2];
+    [self testCollision];
     //获得触摸点
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self.view];
-    
-    //创建吸附行为
-    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.blueView snapToPoint:point];
-    // 防抖系数(值越小, 越抖)
-    snap.damping = 0.5;
-    
-    [self.animator removeAllBehaviors];
-    [self.animator addBehavior:snap];
-    NSLog(@"哈哈，终于好了");
-    NSLog(@"再试一次");
-    NSLog(@"hah");
+//    UITouch *touch = [touches anyObject];
+//    CGPoint point = [touch locationInView:self.view];
+//    
+//    //创建吸附行为
+//    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.blueView snapToPoint:point];
+//    // 防抖系数(值越小, 越抖)
+//    snap.damping = 0.5;
+//    
+//    [self.animator removeAllBehaviors];
+//    [self.animator addBehavior:snap];
     
 }
 
